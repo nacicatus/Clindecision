@@ -13,6 +13,8 @@
 		F8326C141BD17644000A82D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8326C131BD17644000A82D0 /* Images.xcassets */; };
 		F8326C171BD17644000A82D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8326C151BD17644000A82D0 /* LaunchScreen.xib */; };
 		F8326C231BD17644000A82D0 /* ClindecisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8326C221BD17644000A82D0 /* ClindecisionTests.swift */; };
+		F8326C2D1BD1780E000A82D0 /* Specialties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8326C2C1BD1780E000A82D0 /* Specialties.swift */; };
+		F8E7573B1BD17FD900D7F32D /* SpecDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7573A1BD17FD900D7F32D /* SpecDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		F8326C1C1BD17644000A82D0 /* ClindecisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClindecisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8326C211BD17644000A82D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8326C221BD17644000A82D0 /* ClindecisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClindecisionTests.swift; sourceTree = "<group>"; };
+		F8326C2C1BD1780E000A82D0 /* Specialties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specialties.swift; sourceTree = "<group>"; };
+		F8E7573A1BD17FD900D7F32D /* SpecDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				F8326C0C1BD17644000A82D0 /* AppDelegate.swift */,
 				F8326C0E1BD17644000A82D0 /* ViewController.swift */,
+				F8E7573A1BD17FD900D7F32D /* SpecDetailViewController.swift */,
+				F8326C2C1BD1780E000A82D0 /* Specialties.swift */,
 				F8326C101BD17644000A82D0 /* Main.storyboard */,
 				F8326C131BD17644000A82D0 /* Images.xcassets */,
 				F8326C151BD17644000A82D0 /* LaunchScreen.xib */,
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8326C2D1BD1780E000A82D0 /* Specialties.swift in Sources */,
 				F8326C0F1BD17644000A82D0 /* ViewController.swift in Sources */,
+				F8E7573B1BD17FD900D7F32D /* SpecDetailViewController.swift in Sources */,
 				F8326C0D1BD17644000A82D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +417,7 @@
 				F8326C281BD17644000A82D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8326C291BD17644000A82D0 /* Build configuration list for PBXNativeTarget "ClindecisionTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				F8326C2B1BD17644000A82D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
