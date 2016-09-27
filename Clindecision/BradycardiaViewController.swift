@@ -13,14 +13,27 @@ class BradycardiaViewController: UIViewController {
     
     @IBOutlet weak var introLabel: UILabel!
     @IBOutlet weak var historyDetailLabel: UILabel!
+    
     @IBOutlet weak var physioButton: UIButton!
     @IBOutlet weak var pathoButton: UIButton!
     @IBOutlet weak var pharmaButton: UIButton!
+    
     @IBOutlet weak var physioDifferentialText: UITextView!
-    
     @IBOutlet weak var physioPossibleLabel: UILabel!
-    
     @IBOutlet weak var physioCauseSwitch: UISwitch!
+    
+    @IBOutlet weak var drugHistoryLabel: UILabel!
+    @IBOutlet weak var ccbLabel: UILabel!
+    @IBOutlet weak var ccbSwitch: UISwitch!
+    
+    @IBOutlet weak var betaBlockerLabel: UILabel!
+    @IBOutlet weak var betaBlockerSwitch: UISwitch!
+    
+    @IBOutlet weak var digitalisLabel: UILabel!
+    @IBOutlet weak var digitalisSwitch: UISwitch!
+    
+    @IBOutlet weak var antiArrhythmicsLabel: UILabel!
+    @IBOutlet weak var antiArrhythmicsSwitch: UISwitch!
     
     
     override func viewDidLoad() {
@@ -34,6 +47,17 @@ class BradycardiaViewController: UIViewController {
         physioDifferentialText.hidden = true
         physioPossibleLabel.hidden = true
         physioCauseSwitch.hidden = true
+        
+        drugHistoryLabel.hidden = true
+        ccbLabel.hidden = true
+        betaBlockerLabel.hidden = true
+        digitalisLabel.hidden = true
+        antiArrhythmicsLabel.hidden = true
+        
+        ccbSwitch.hidden = true
+        betaBlockerSwitch.hidden = true
+        digitalisSwitch.hidden = true
+        antiArrhythmicsSwitch.hidden = true
         
         
     }
@@ -65,7 +89,31 @@ class BradycardiaViewController: UIViewController {
             physioPossibleLabel.hidden = true
             physioDifferentialText.hidden = true
         }
-        
     }
+    
+    @IBAction func pharmaButtonPressed(sender: UIButton) {
+        if drugHistoryLabel.hidden {
+            drugHistoryLabel.hidden = false
+            ccbLabel.hidden = false
+            betaBlockerLabel.hidden = false
+            antiArrhythmicsLabel.hidden = false
+            digitalisLabel.hidden = false
+            ccbSwitch.hidden = false
+            betaBlockerSwitch.hidden = false
+            digitalisSwitch.hidden = false
+            antiArrhythmicsSwitch.hidden = false
+        } else {
+            drugHistoryLabel.hidden = true
+            ccbLabel.hidden = true
+            betaBlockerLabel.hidden = true
+            digitalisLabel.hidden = true
+            antiArrhythmicsLabel.hidden = true
+            ccbSwitch.hidden = true
+            betaBlockerSwitch.hidden = true
+            digitalisSwitch.hidden = true
+            antiArrhythmicsSwitch.hidden = true
+        }
+    }
+    
     
 }

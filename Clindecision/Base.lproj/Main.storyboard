@@ -183,7 +183,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8u-CA-seA">
                                 <rect key="frame" x="53" y="136" width="495" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="6ed-cz-DHs"/>
+                                    <constraint firstAttribute="height" constant="20" id="Hzc-Gx-OlV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -211,7 +211,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7j-JH-uAX">
-                                <rect key="frame" x="16" y="164" width="103" height="30"/>
+                                <rect key="frame" x="56" y="164" width="103" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="hHL-h2-f4d"/>
+                                </constraints>
                                 <state key="normal" title="Physiologic">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -226,70 +229,167 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pY-td-L9E">
-                                <rect key="frame" x="481" y="164" width="103" height="30"/>
+                                <rect key="frame" x="441" y="164" width="103" height="30"/>
                                 <state key="normal" title="Pharmacologic">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pharmaButtonPressed:" destination="ANq-ZS-Ly9" eventType="touchUpInside" id="csw-Lj-Zz1"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this a possible cause?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUC-LE-PDH">
-                                <rect key="frame" x="16" y="423" width="148" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="we4-1w-VPQ">
+                                <rect key="frame" x="16" y="202" width="244" height="351"/>
+                                <string key="text">Sinus pauses up to 2 seconds in asymptomatic individuals can be considered normal. Conditioned athletes often can have high resting vagal tone during the day. During periods of heightened vagal tone, sinus bradycardia, sinus pauses, and first- and second-degree Mobitz type I (Wenckebach) AV block are commonly reported and generally have a benign prognosis. The identification of sinus slowing with AV block in the appropriate setting is characteristic of vagal hypersensitivity.</string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="03W-tC-u9o">
+                                <rect key="frame" x="211" y="561" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drug history positive for:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVS-KB-h27">
+                                <rect key="frame" x="371" y="202" width="189" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="ByN-AU-7vj"/>
+                                    <constraint firstAttribute="width" constant="189" id="D9X-Zb-l62"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03W-tC-u9o">
-                                <rect key="frame" x="16" y="447" width="51" height="31"/>
-                            </switch>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" indicatorStyle="white" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="we4-1w-VPQ">
-                                <rect key="frame" x="16" y="202" width="191" height="213"/>
-                                <color key="backgroundColor" red="1" green="0.87912581975592052" blue="0.60811227562542514" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ca²⁺ Channel Blockers" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSQ-YL-Xdl">
+                                <rect key="frame" x="371" y="239" width="149" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="191" id="eUK-al-9x1"/>
+                                    <constraint firstAttribute="width" constant="149" id="OGP-PZ-ZH8"/>
                                 </constraints>
-                                <mutableString key="text">In the general population, heart rates in approximately 25% of men and 10% of women drop below 50 beats per minute (bpm) during sleep as a result of enhanced nocturnal parasympathetic tone. Sinus pauses up to 2 seconds in asymptomatic individuals can be considered normal. Conditioned athletes often can have high resting vagal tone during the day. During periods of heightened vagal tone, sinus bradycardia, sinus pauses, and first- and second-degree Mobitz type I (Wenckebach) AV block are commonly reported and generally have a benign prognosis. The identification of sinus slowing with AV block in the appropriate setting is characteristic of vagal hypersensitivity.</mutableString>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beta Blockers" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsD-W0-Lhb">
+                                <rect key="frame" x="371" y="278" width="149" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digitalis glycosides" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xi-8G-voG">
+                                <rect key="frame" x="371" y="317" width="149" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antiarrhythmics" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPr-6D-vzF">
+                                <rect key="frame" x="371" y="356" width="149" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zOb-AL-ttW">
+                                <rect key="frame" x="535" y="239" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oNI-ZD-FA9">
+                                <rect key="frame" x="535" y="356" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m6a-RB-Vtz">
+                                <rect key="frame" x="535" y="317" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nmL-N7-naY">
+                                <rect key="frame" x="535" y="278" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this a possible cause?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUC-LE-PDH">
+                                <rect key="frame" x="16" y="561" width="187" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="Tc2-tY-g1m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="we4-1w-VPQ" firstAttribute="leading" secondItem="LUC-LE-PDH" secondAttribute="leading" id="1Qk-hT-H72"/>
+                            <constraint firstItem="lsD-W0-Lhb" firstAttribute="top" secondItem="CSQ-YL-Xdl" secondAttribute="bottom" constant="8" symbolic="YES" id="01L-zT-0qs"/>
+                            <constraint firstItem="CSQ-YL-Xdl" firstAttribute="top" secondItem="zOb-AL-ttW" secondAttribute="top" id="0xj-Vq-jKp"/>
+                            <constraint firstItem="lsD-W0-Lhb" firstAttribute="trailing" secondItem="4xi-8G-voG" secondAttribute="trailing" id="2sp-ps-MJN"/>
+                            <constraint firstItem="4xi-8G-voG" firstAttribute="top" secondItem="lsD-W0-Lhb" secondAttribute="bottom" constant="8" symbolic="YES" id="30y-ip-B9O"/>
+                            <constraint firstItem="G8u-CA-seA" firstAttribute="top" secondItem="haE-kz-Rr7" secondAttribute="bottom" constant="8" symbolic="YES" id="7F1-fv-rOG"/>
+                            <constraint firstItem="m6a-RB-Vtz" firstAttribute="top" secondItem="nmL-N7-naY" secondAttribute="bottom" constant="8" symbolic="YES" id="7Ka-rY-yEa"/>
+                            <constraint firstItem="LUC-LE-PDH" firstAttribute="top" secondItem="we4-1w-VPQ" secondAttribute="bottom" constant="8" symbolic="YES" id="7xM-ph-rID"/>
+                            <constraint firstItem="nmL-N7-naY" firstAttribute="top" secondItem="zOb-AL-ttW" secondAttribute="bottom" constant="8" symbolic="YES" id="82b-cT-fRL"/>
+                            <constraint firstItem="m6a-RB-Vtz" firstAttribute="leading" secondItem="nmL-N7-naY" secondAttribute="leading" id="89D-02-Zlx"/>
                             <constraint firstItem="GHO-DS-GWE" firstAttribute="top" secondItem="Dav-xb-xQA" secondAttribute="bottom" constant="8" id="8bf-os-AAR"/>
-                            <constraint firstItem="hOr-jH-PaR" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" constant="37" id="9VW-op-TgE"/>
-                            <constraint firstItem="t7j-JH-uAX" firstAttribute="height" secondItem="6R6-ml-IVl" secondAttribute="height" id="9cc-Tm-Nli"/>
-                            <constraint firstAttribute="centerX" secondItem="GHO-DS-GWE" secondAttribute="centerX" constant="-0.5" id="Ai4-VC-fAM"/>
-                            <constraint firstItem="G8u-CA-seA" firstAttribute="leading" secondItem="hOr-jH-PaR" secondAttribute="leading" id="C9o-M4-yJD"/>
-                            <constraint firstItem="6R6-ml-IVl" firstAttribute="width" secondItem="4pY-td-L9E" secondAttribute="width" id="CJf-Bs-QQH"/>
+                            <constraint firstItem="CSQ-YL-Xdl" firstAttribute="trailing" secondItem="lsD-W0-Lhb" secondAttribute="trailing" id="8vd-DZ-b7V"/>
+                            <constraint firstItem="4xi-8G-voG" firstAttribute="leading" secondItem="lsD-W0-Lhb" secondAttribute="leading" id="9D5-0x-pAS"/>
+                            <constraint firstItem="zOb-AL-ttW" firstAttribute="leading" secondItem="CSQ-YL-Xdl" secondAttribute="trailing" constant="15" id="Ag8-Qe-Oli"/>
+                            <constraint firstItem="we4-1w-VPQ" firstAttribute="leading" secondItem="LUC-LE-PDH" secondAttribute="leading" id="Be1-Js-efo"/>
+                            <constraint firstItem="03W-tC-u9o" firstAttribute="leading" secondItem="LUC-LE-PDH" secondAttribute="trailing" constant="8" symbolic="YES" id="C9Y-Wk-EJP"/>
+                            <constraint firstItem="LUC-LE-PDH" firstAttribute="bottom" secondItem="03W-tC-u9o" secondAttribute="bottom" id="CHe-i2-e2O"/>
+                            <constraint firstItem="t7j-JH-uAX" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" constant="40" id="Cl9-5C-hfb"/>
+                            <constraint firstItem="we4-1w-VPQ" firstAttribute="leading" secondItem="LUC-LE-PDH" secondAttribute="leading" id="DLp-2c-RIW"/>
+                            <constraint firstItem="sPr-6D-vzF" firstAttribute="leading" secondItem="4xi-8G-voG" secondAttribute="leading" id="DW6-tK-FXv"/>
+                            <constraint firstItem="4xi-8G-voG" firstAttribute="top" secondItem="m6a-RB-Vtz" secondAttribute="top" id="Eql-kO-mpq"/>
+                            <constraint firstItem="sPr-6D-vzF" firstAttribute="top" secondItem="oNI-ZD-FA9" secondAttribute="top" id="GDJ-ZF-8af"/>
+                            <constraint firstItem="zOb-AL-ttW" firstAttribute="leading" secondItem="nmL-N7-naY" secondAttribute="leading" id="Gte-HY-4IP"/>
                             <constraint firstItem="haE-kz-Rr7" firstAttribute="top" secondItem="hOr-jH-PaR" secondAttribute="bottom" constant="8" symbolic="YES" id="HN8-bd-xIF"/>
-                            <constraint firstItem="t7j-JH-uAX" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" id="Lma-ip-FUh"/>
-                            <constraint firstItem="LUC-LE-PDH" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" id="T7c-mw-Igr"/>
-                            <constraint firstItem="6R6-ml-IVl" firstAttribute="top" secondItem="G8u-CA-seA" secondAttribute="bottom" constant="8" id="XVz-WF-Z9a"/>
+                            <constraint firstItem="oNI-ZD-FA9" firstAttribute="leading" secondItem="m6a-RB-Vtz" secondAttribute="leading" id="IKu-eJ-Na2"/>
+                            <constraint firstItem="LUC-LE-PDH" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" id="JMc-rU-skN"/>
+                            <constraint firstItem="G8u-CA-seA" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" constant="37" id="MqP-4b-gTd"/>
+                            <constraint firstItem="fKv-Ea-Mtf" firstAttribute="top" secondItem="LUC-LE-PDH" secondAttribute="bottom" constant="8" symbolic="YES" id="Pat-rG-Uh1"/>
+                            <constraint firstItem="oNI-ZD-FA9" firstAttribute="top" secondItem="m6a-RB-Vtz" secondAttribute="bottom" constant="8" symbolic="YES" id="Q2h-Ok-udc"/>
+                            <constraint firstItem="we4-1w-VPQ" firstAttribute="trailing" secondItem="03W-tC-u9o" secondAttribute="trailing" id="Q5r-bs-a3E"/>
+                            <constraint firstItem="lsD-W0-Lhb" firstAttribute="leading" secondItem="CSQ-YL-Xdl" secondAttribute="leading" id="WWf-M2-GLU"/>
                             <constraint firstItem="hOr-jH-PaR" firstAttribute="top" secondItem="Dav-xb-xQA" secondAttribute="bottom" constant="28" id="Xud-jH-Fae"/>
-                            <constraint firstItem="t7j-JH-uAX" firstAttribute="width" secondItem="6R6-ml-IVl" secondAttribute="width" id="ZyT-xT-Xjw"/>
-                            <constraint firstItem="fKv-Ea-Mtf" firstAttribute="top" secondItem="03W-tC-u9o" secondAttribute="bottom" constant="122" id="dNc-9E-jR0"/>
-                            <constraint firstItem="G8u-CA-seA" firstAttribute="top" secondItem="haE-kz-Rr7" secondAttribute="bottom" constant="8" symbolic="YES" id="dcY-20-JP7"/>
-                            <constraint firstAttribute="centerX" secondItem="6R6-ml-IVl" secondAttribute="centerX" id="fFO-tg-gmK"/>
-                            <constraint firstItem="6R6-ml-IVl" firstAttribute="height" secondItem="4pY-td-L9E" secondAttribute="height" id="fy7-Qt-FOA"/>
-                            <constraint firstItem="03W-tC-u9o" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" id="hAq-Vs-kGh"/>
+                            <constraint firstItem="LUC-LE-PDH" firstAttribute="top" secondItem="we4-1w-VPQ" secondAttribute="bottom" id="Y4p-1A-Lkj"/>
+                            <constraint firstItem="pVS-KB-h27" firstAttribute="top" secondItem="we4-1w-VPQ" secondAttribute="top" id="YVi-X8-5uT"/>
+                            <constraint firstItem="we4-1w-VPQ" firstAttribute="top" secondItem="t7j-JH-uAX" secondAttribute="bottom" constant="8" symbolic="YES" id="ZTs-XV-MDz"/>
+                            <constraint firstItem="6R6-ml-IVl" firstAttribute="centerX" secondItem="Y19-tK-mQZ" secondAttribute="centerX" id="azk-EB-FNb"/>
+                            <constraint firstItem="t7j-JH-uAX" firstAttribute="top" secondItem="G8u-CA-seA" secondAttribute="bottom" constant="8" symbolic="YES" id="bw8-uB-Hr0"/>
+                            <constraint firstItem="sPr-6D-vzF" firstAttribute="trailing" secondItem="4xi-8G-voG" secondAttribute="trailing" id="cA2-mP-emD"/>
+                            <constraint firstItem="sPr-6D-vzF" firstAttribute="top" secondItem="4xi-8G-voG" secondAttribute="bottom" constant="8" symbolic="YES" id="cRH-b6-UgM"/>
+                            <constraint firstItem="we4-1w-VPQ" firstAttribute="top" secondItem="pVS-KB-h27" secondAttribute="top" id="ci4-Jo-tV3"/>
+                            <constraint firstItem="LUC-LE-PDH" firstAttribute="top" secondItem="03W-tC-u9o" secondAttribute="top" id="dYb-br-7yK"/>
+                            <constraint firstItem="CSQ-YL-Xdl" firstAttribute="top" secondItem="pVS-KB-h27" secondAttribute="bottom" constant="8" symbolic="YES" id="dbX-Dq-AN5"/>
+                            <constraint firstItem="G8u-CA-seA" firstAttribute="trailing" secondItem="hOr-jH-PaR" secondAttribute="trailing" id="f95-rI-CAY"/>
+                            <constraint firstItem="lsD-W0-Lhb" firstAttribute="top" secondItem="nmL-N7-naY" secondAttribute="top" id="grt-kC-wKg"/>
+                            <constraint firstItem="pVS-KB-h27" firstAttribute="leading" secondItem="CSQ-YL-Xdl" secondAttribute="leading" id="hmE-8m-xdD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pVS-KB-h27" secondAttribute="trailing" constant="24" id="ioF-bD-lti"/>
                             <constraint firstItem="hOr-jH-PaR" firstAttribute="centerX" secondItem="GHO-DS-GWE" secondAttribute="centerX" id="j0O-mb-fqp"/>
+                            <constraint firstItem="4pY-td-L9E" firstAttribute="leading" secondItem="6R6-ml-IVl" secondAttribute="trailing" constant="89" id="kmG-Nd-Ric"/>
+                            <constraint firstItem="03W-tC-u9o" firstAttribute="top" secondItem="we4-1w-VPQ" secondAttribute="bottom" constant="8" id="lkn-Pn-cDB"/>
                             <constraint firstItem="haE-kz-Rr7" firstAttribute="centerX" secondItem="hOr-jH-PaR" secondAttribute="centerX" id="ofT-ba-lwt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4pY-td-L9E" secondAttribute="trailing" id="qh9-Wi-m0X"/>
-                            <constraint firstItem="t7j-JH-uAX" firstAttribute="centerY" secondItem="6R6-ml-IVl" secondAttribute="centerY" id="rlM-3B-uPG"/>
-                            <constraint firstItem="G8u-CA-seA" firstAttribute="trailing" secondItem="hOr-jH-PaR" secondAttribute="trailing" id="t2B-0b-yI5"/>
-                            <constraint firstItem="03W-tC-u9o" firstAttribute="top" secondItem="LUC-LE-PDH" secondAttribute="bottom" constant="8" id="tkE-LG-VnM"/>
-                            <constraint firstItem="6R6-ml-IVl" firstAttribute="centerY" secondItem="4pY-td-L9E" secondAttribute="centerY" id="ueH-5K-fwo"/>
-                            <constraint firstItem="LUC-LE-PDH" firstAttribute="top" secondItem="we4-1w-VPQ" secondAttribute="bottom" constant="8" symbolic="YES" id="xQj-1j-jfR"/>
-                            <constraint firstItem="we4-1w-VPQ" firstAttribute="top" secondItem="t7j-JH-uAX" secondAttribute="bottom" constant="8" symbolic="YES" id="xbD-ix-Y3N"/>
+                            <constraint firstItem="G8u-CA-seA" firstAttribute="leading" secondItem="hOr-jH-PaR" secondAttribute="leading" id="qpP-8x-Ovt"/>
+                            <constraint firstItem="6R6-ml-IVl" firstAttribute="baseline" secondItem="t7j-JH-uAX" secondAttribute="baseline" id="rKW-Go-c7V"/>
+                            <constraint firstItem="sPr-6D-vzF" firstAttribute="bottom" secondItem="oNI-ZD-FA9" secondAttribute="bottom" id="s3t-Td-xNz"/>
+                            <constraint firstItem="6R6-ml-IVl" firstAttribute="baseline" secondItem="4pY-td-L9E" secondAttribute="baseline" id="uCh-Ie-Cla"/>
+                            <constraint firstItem="6R6-ml-IVl" firstAttribute="leading" secondItem="t7j-JH-uAX" secondAttribute="trailing" constant="90" id="uX2-FB-O8N"/>
+                            <constraint firstItem="we4-1w-VPQ" firstAttribute="leading" secondItem="LUC-LE-PDH" secondAttribute="leading" id="w9P-sc-SNR"/>
+                            <constraint firstItem="G8u-CA-seA" firstAttribute="centerX" secondItem="6R6-ml-IVl" secondAttribute="centerX" id="wIJ-dI-Rk7"/>
+                            <constraint firstItem="LUC-LE-PDH" firstAttribute="leading" secondItem="we4-1w-VPQ" secondAttribute="leading" id="wfA-S4-sur"/>
+                            <constraint firstItem="LUC-LE-PDH" firstAttribute="top" secondItem="we4-1w-VPQ" secondAttribute="bottom" id="y5Q-Jk-nqa"/>
                             <constraint firstItem="GHO-DS-GWE" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" id="zFG-bo-f5A"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="DLp-2c-RIW"/>
+                                <exclude reference="w9P-sc-SNR"/>
                                 <exclude reference="zFG-bo-f5A"/>
+                                <exclude reference="YVi-X8-5uT"/>
+                                <exclude reference="Y4p-1A-Lkj"/>
+                                <exclude reference="wfA-S4-sur"/>
+                                <exclude reference="y5Q-Jk-nqa"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="antiArrhythmicsLabel" destination="sPr-6D-vzF" id="52T-2x-rf4"/>
+                        <outlet property="antiArrhythmicsSwitch" destination="oNI-ZD-FA9" id="vgN-He-7v0"/>
+                        <outlet property="betaBlockerLabel" destination="lsD-W0-Lhb" id="pY2-Rk-phg"/>
+                        <outlet property="betaBlockerSwitch" destination="nmL-N7-naY" id="ug5-17-g2c"/>
+                        <outlet property="ccbLabel" destination="CSQ-YL-Xdl" id="ZRF-jp-lRV"/>
+                        <outlet property="ccbSwitch" destination="zOb-AL-ttW" id="D7F-Tl-0A4"/>
+                        <outlet property="digitalisLabel" destination="4xi-8G-voG" id="rJ3-Jp-d7g"/>
+                        <outlet property="digitalisSwitch" destination="m6a-RB-Vtz" id="g1X-Os-kL1"/>
+                        <outlet property="drugHistoryLabel" destination="pVS-KB-h27" id="881-gl-ECR"/>
                         <outlet property="historyDetailLabel" destination="G8u-CA-seA" id="jIG-Ix-xEF"/>
                         <outlet property="introLabel" destination="hOr-jH-PaR" id="t4s-pD-KaD"/>
                         <outlet property="pathoButton" destination="6R6-ml-IVl" id="OrM-sJ-3y9"/>
