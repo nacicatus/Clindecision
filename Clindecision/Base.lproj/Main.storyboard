@@ -162,41 +162,6 @@
             </objects>
             <point key="canvasLocation" x="3350" y="1188"/>
         </scene>
-        <!--Text View Controller-->
-        <scene sceneID="MqP-iv-Dkc">
-            <objects>
-                <viewController id="TJx-30-Fb2" customClass="TextViewController" customModule="Clindecision" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ItX-b6-Agx"/>
-                        <viewControllerLayoutGuide type="bottom" id="2al-Mk-DgR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tQI-9Y-ZSu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzv-gz-XIv">
-                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
-                                <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Gzv-gz-XIv" firstAttribute="top" secondItem="ItX-b6-Agx" secondAttribute="bottom" constant="8" symbolic="YES" id="2t8-dK-Nqb"/>
-                            <constraint firstItem="Gzv-gz-XIv" firstAttribute="leading" secondItem="tQI-9Y-ZSu" secondAttribute="leading" id="89C-dh-yv6"/>
-                            <constraint firstItem="Gzv-gz-XIv" firstAttribute="bottom" secondItem="2al-Mk-DgR" secondAttribute="top" id="FmV-PS-3ov"/>
-                            <constraint firstAttribute="trailing" secondItem="Gzv-gz-XIv" secondAttribute="trailing" id="gyH-rG-YJO"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="textView" destination="Gzv-gz-XIv" id="Gsb-Cy-znd"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uxp-X6-UVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1863" y="-610"/>
-        </scene>
         <!--Bradycardia View Controller-->
         <scene sceneID="GgY-LS-kse">
             <objects>
@@ -215,27 +180,107 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haE-kz-Rr7">
-                                <rect key="frame" x="229" y="57" width="142" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8u-CA-seA">
+                                <rect key="frame" x="53" y="136" width="495" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="142" id="Yxd-hb-QWa"/>
+                                    <constraint firstAttribute="height" constant="20" id="6ed-cz-DHs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haE-kz-Rr7">
+                                <rect key="frame" x="229" y="98" width="142" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="7Qs-SW-ORv"/>
                                 </constraints>
                                 <state key="normal" title="History &amp; Physical">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TJx-30-Fb2" kind="popoverPresentation" identifier="Show History Physical" popoverAnchorView="haE-kz-Rr7" id="R8V-26-rsu">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <action selector="historyButton:" destination="ANq-ZS-Ly9" eventType="touchUpInside" id="2nm-7M-mcn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOr-jH-PaR">
+                                <rect key="frame" x="53" y="48" width="495" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="4Z6-jG-eNf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7j-JH-uAX">
+                                <rect key="frame" x="16" y="164" width="103" height="30"/>
+                                <state key="normal" title="Physiologic">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="physioButtonPressed:" destination="ANq-ZS-Ly9" eventType="touchUpInside" id="BjR-bT-Yad"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R6-ml-IVl">
+                                <rect key="frame" x="249" y="164" width="103" height="30"/>
+                                <state key="normal" title="Pathologic">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pY-td-L9E">
+                                <rect key="frame" x="481" y="164" width="103" height="30"/>
+                                <state key="normal" title="Pharmacologic">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this a possible cause?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUC-LE-PDH">
+                                <rect key="frame" x="16" y="423" width="148" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03W-tC-u9o">
+                                <rect key="frame" x="16" y="447" width="51" height="31"/>
+                            </switch>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" indicatorStyle="white" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="we4-1w-VPQ">
+                                <rect key="frame" x="16" y="202" width="191" height="213"/>
+                                <color key="backgroundColor" red="1" green="0.87912581975592052" blue="0.60811227562542514" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="eUK-al-9x1"/>
+                                </constraints>
+                                <mutableString key="text">In the general population, heart rates in approximately 25% of men and 10% of women drop below 50 beats per minute (bpm) during sleep as a result of enhanced nocturnal parasympathetic tone. Sinus pauses up to 2 seconds in asymptomatic individuals can be considered normal. Conditioned athletes often can have high resting vagal tone during the day. During periods of heightened vagal tone, sinus bradycardia, sinus pauses, and first- and second-degree Mobitz type I (Wenckebach) AV block are commonly reported and generally have a benign prognosis. The identification of sinus slowing with AV block in the appropriate setting is characteristic of vagal hypersensitivity.</mutableString>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="haE-kz-Rr7" firstAttribute="centerX" secondItem="GHO-DS-GWE" secondAttribute="centerX" id="KXe-qk-eg0"/>
-                            <constraint firstItem="haE-kz-Rr7" firstAttribute="top" secondItem="GHO-DS-GWE" secondAttribute="bottom" constant="8" symbolic="YES" id="hi7-0F-uLe"/>
-                            <constraint firstItem="GHO-DS-GWE" firstAttribute="top" secondItem="Dav-xb-xQA" secondAttribute="bottom" constant="8" id="mLp-n6-8f3"/>
-                            <constraint firstItem="haE-kz-Rr7" firstAttribute="centerX" secondItem="Y19-tK-mQZ" secondAttribute="centerX" id="xIG-OH-QWR"/>
+                            <constraint firstItem="we4-1w-VPQ" firstAttribute="leading" secondItem="LUC-LE-PDH" secondAttribute="leading" id="1Qk-hT-H72"/>
+                            <constraint firstItem="GHO-DS-GWE" firstAttribute="top" secondItem="Dav-xb-xQA" secondAttribute="bottom" constant="8" id="8bf-os-AAR"/>
+                            <constraint firstItem="hOr-jH-PaR" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" constant="37" id="9VW-op-TgE"/>
+                            <constraint firstItem="t7j-JH-uAX" firstAttribute="height" secondItem="6R6-ml-IVl" secondAttribute="height" id="9cc-Tm-Nli"/>
+                            <constraint firstAttribute="centerX" secondItem="GHO-DS-GWE" secondAttribute="centerX" constant="-0.5" id="Ai4-VC-fAM"/>
+                            <constraint firstItem="G8u-CA-seA" firstAttribute="leading" secondItem="hOr-jH-PaR" secondAttribute="leading" id="C9o-M4-yJD"/>
+                            <constraint firstItem="6R6-ml-IVl" firstAttribute="width" secondItem="4pY-td-L9E" secondAttribute="width" id="CJf-Bs-QQH"/>
+                            <constraint firstItem="haE-kz-Rr7" firstAttribute="top" secondItem="hOr-jH-PaR" secondAttribute="bottom" constant="8" symbolic="YES" id="HN8-bd-xIF"/>
+                            <constraint firstItem="t7j-JH-uAX" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" id="Lma-ip-FUh"/>
+                            <constraint firstItem="LUC-LE-PDH" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" id="T7c-mw-Igr"/>
+                            <constraint firstItem="6R6-ml-IVl" firstAttribute="top" secondItem="G8u-CA-seA" secondAttribute="bottom" constant="8" id="XVz-WF-Z9a"/>
+                            <constraint firstItem="hOr-jH-PaR" firstAttribute="top" secondItem="Dav-xb-xQA" secondAttribute="bottom" constant="28" id="Xud-jH-Fae"/>
+                            <constraint firstItem="t7j-JH-uAX" firstAttribute="width" secondItem="6R6-ml-IVl" secondAttribute="width" id="ZyT-xT-Xjw"/>
+                            <constraint firstItem="fKv-Ea-Mtf" firstAttribute="top" secondItem="03W-tC-u9o" secondAttribute="bottom" constant="122" id="dNc-9E-jR0"/>
+                            <constraint firstItem="G8u-CA-seA" firstAttribute="top" secondItem="haE-kz-Rr7" secondAttribute="bottom" constant="8" symbolic="YES" id="dcY-20-JP7"/>
+                            <constraint firstAttribute="centerX" secondItem="6R6-ml-IVl" secondAttribute="centerX" id="fFO-tg-gmK"/>
+                            <constraint firstItem="6R6-ml-IVl" firstAttribute="height" secondItem="4pY-td-L9E" secondAttribute="height" id="fy7-Qt-FOA"/>
+                            <constraint firstItem="03W-tC-u9o" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" id="hAq-Vs-kGh"/>
+                            <constraint firstItem="hOr-jH-PaR" firstAttribute="centerX" secondItem="GHO-DS-GWE" secondAttribute="centerX" id="j0O-mb-fqp"/>
+                            <constraint firstItem="haE-kz-Rr7" firstAttribute="centerX" secondItem="hOr-jH-PaR" secondAttribute="centerX" id="ofT-ba-lwt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4pY-td-L9E" secondAttribute="trailing" id="qh9-Wi-m0X"/>
+                            <constraint firstItem="t7j-JH-uAX" firstAttribute="centerY" secondItem="6R6-ml-IVl" secondAttribute="centerY" id="rlM-3B-uPG"/>
+                            <constraint firstItem="G8u-CA-seA" firstAttribute="trailing" secondItem="hOr-jH-PaR" secondAttribute="trailing" id="t2B-0b-yI5"/>
+                            <constraint firstItem="03W-tC-u9o" firstAttribute="top" secondItem="LUC-LE-PDH" secondAttribute="bottom" constant="8" id="tkE-LG-VnM"/>
+                            <constraint firstItem="6R6-ml-IVl" firstAttribute="centerY" secondItem="4pY-td-L9E" secondAttribute="centerY" id="ueH-5K-fwo"/>
+                            <constraint firstItem="LUC-LE-PDH" firstAttribute="top" secondItem="we4-1w-VPQ" secondAttribute="bottom" constant="8" symbolic="YES" id="xQj-1j-jfR"/>
+                            <constraint firstItem="we4-1w-VPQ" firstAttribute="top" secondItem="t7j-JH-uAX" secondAttribute="bottom" constant="8" symbolic="YES" id="xbD-ix-Y3N"/>
                             <constraint firstItem="GHO-DS-GWE" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" id="zFG-bo-f5A"/>
                         </constraints>
                         <variation key="default">
@@ -244,6 +289,16 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="historyDetailLabel" destination="G8u-CA-seA" id="jIG-Ix-xEF"/>
+                        <outlet property="introLabel" destination="hOr-jH-PaR" id="t4s-pD-KaD"/>
+                        <outlet property="pathoButton" destination="6R6-ml-IVl" id="OrM-sJ-3y9"/>
+                        <outlet property="pharmaButton" destination="4pY-td-L9E" id="zIj-is-6Pl"/>
+                        <outlet property="physioButton" destination="t7j-JH-uAX" id="PBS-pE-7k0"/>
+                        <outlet property="physioCauseSwitch" destination="03W-tC-u9o" id="l9v-lS-FfX"/>
+                        <outlet property="physioDifferentialText" destination="we4-1w-VPQ" id="KjP-2x-15A"/>
+                        <outlet property="physioPossibleLabel" destination="LUC-LE-PDH" id="1zh-rC-8wl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qy7-9i-YL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
