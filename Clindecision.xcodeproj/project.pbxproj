@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F82387861D9A871F00AC1E56 /* SymptomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82387851D9A871F00AC1E56 /* SymptomTableViewController.swift */; };
 		F85B04861D9A85D000D5F27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85B04851D9A85D000D5F27D /* AppDelegate.swift */; };
 		F85B04891D9A85D000D5F27D /* Clindecision.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F85B04871D9A85D000D5F27D /* Clindecision.xcdatamodeld */; };
-		F85B048B1D9A85D000D5F27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85B048A1D9A85D000D5F27D /* ViewController.swift */; };
 		F85B048E1D9A85D000D5F27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85B048C1D9A85D000D5F27D /* Main.storyboard */; };
 		F85B04901D9A85D000D5F27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85B048F1D9A85D000D5F27D /* Images.xcassets */; };
 		F85B04931D9A85D000D5F27D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85B04911D9A85D000D5F27D /* LaunchScreen.xib */; };
@@ -27,11 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F82387851D9A871F00AC1E56 /* SymptomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymptomTableViewController.swift; path = ../SymptomTableViewController.swift; sourceTree = "<group>"; };
 		F85B04801D9A85D000D5F27D /* Clindecision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clindecision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85B04841D9A85D000D5F27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F85B04851D9A85D000D5F27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F85B04881D9A85D000D5F27D /* Clindecision.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clindecision.xcdatamodel; sourceTree = "<group>"; };
-		F85B048A1D9A85D000D5F27D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F85B048D1D9A85D000D5F27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F85B048F1D9A85D000D5F27D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F85B04921D9A85D000D5F27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -79,12 +79,8 @@
 		F85B04821D9A85D000D5F27D /* Clindecision */ = {
 			isa = PBXGroup;
 			children = (
-				F85B04851D9A85D000D5F27D /* AppDelegate.swift */,
-				F85B048A1D9A85D000D5F27D /* ViewController.swift */,
+				F82387851D9A871F00AC1E56 /* SymptomTableViewController.swift */,
 				F85B048C1D9A85D000D5F27D /* Main.storyboard */,
-				F85B048F1D9A85D000D5F27D /* Images.xcassets */,
-				F85B04911D9A85D000D5F27D /* LaunchScreen.xib */,
-				F85B04871D9A85D000D5F27D /* Clindecision.xcdatamodeld */,
 				F85B04831D9A85D000D5F27D /* Supporting Files */,
 			);
 			path = Clindecision;
@@ -93,6 +89,10 @@
 		F85B04831D9A85D000D5F27D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F85B048F1D9A85D000D5F27D /* Images.xcassets */,
+				F85B04851D9A85D000D5F27D /* AppDelegate.swift */,
+				F85B04911D9A85D000D5F27D /* LaunchScreen.xib */,
+				F85B04871D9A85D000D5F27D /* Clindecision.xcdatamodeld */,
 				F85B04841D9A85D000D5F27D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F85B048B1D9A85D000D5F27D /* ViewController.swift in Sources */,
+				F82387861D9A871F00AC1E56 /* SymptomTableViewController.swift in Sources */,
 				F85B04861D9A85D000D5F27D /* AppDelegate.swift in Sources */,
 				F85B04891D9A85D000D5F27D /* Clindecision.xcdatamodeld in Sources */,
 			);
@@ -415,6 +415,7 @@
 				F85B04A41D9A85D000D5F27D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F85B04A51D9A85D000D5F27D /* Build configuration list for PBXNativeTarget "ClindecisionTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +424,7 @@
 				F85B04A71D9A85D000D5F27D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
