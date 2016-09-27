@@ -14,6 +14,8 @@
 		F85B04901D9A85D000D5F27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85B048F1D9A85D000D5F27D /* Images.xcassets */; };
 		F85B04931D9A85D000D5F27D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85B04911D9A85D000D5F27D /* LaunchScreen.xib */; };
 		F85B049F1D9A85D000D5F27D /* ClindecisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85B049E1D9A85D000D5F27D /* ClindecisionTests.swift */; };
+		F8E7EF4F1D9AE0D600558082 /* BradycardiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7EF4E1D9AE0D600558082 /* BradycardiaViewController.swift */; };
+		F8E7EF511D9AE9E600558082 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7EF501D9AE9E600558082 /* TextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		F85B04981D9A85D000D5F27D /* ClindecisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClindecisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85B049D1D9A85D000D5F27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F85B049E1D9A85D000D5F27D /* ClindecisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClindecisionTests.swift; sourceTree = "<group>"; };
+		F8E7EF4E1D9AE0D600558082 /* BradycardiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BradycardiaViewController.swift; sourceTree = "<group>"; };
+		F8E7EF501D9AE9E600558082 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			children = (
 				F82387851D9A871F00AC1E56 /* SymptomTableViewController.swift */,
 				F85B048C1D9A85D000D5F27D /* Main.storyboard */,
+				F8E7EF4E1D9AE0D600558082 /* BradycardiaViewController.swift */,
+				F8E7EF501D9AE9E600558082 /* TextViewController.swift */,
 				F85B04831D9A85D000D5F27D /* Supporting Files */,
 			);
 			path = Clindecision;
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E7EF511D9AE9E600558082 /* TextViewController.swift in Sources */,
 				F82387861D9A871F00AC1E56 /* SymptomTableViewController.swift in Sources */,
 				F85B04861D9A85D000D5F27D /* AppDelegate.swift in Sources */,
 				F85B04891D9A85D000D5F27D /* Clindecision.xcdatamodeld in Sources */,
+				F8E7EF4F1D9AE0D600558082 /* BradycardiaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

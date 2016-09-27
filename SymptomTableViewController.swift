@@ -36,7 +36,6 @@ class SymptomTableViewController: UITableViewController {
     
     // MARK: - Table view data source
     
-    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return departmentArray.count
     }
@@ -52,31 +51,18 @@ class SymptomTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SymptomCell", forIndexPath: indexPath) as! UITableViewCell
-        
         cell.textLabel?.text = departmentArray[indexPath.section].symptomata[indexPath.row]
-        
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let destinationName = departmentArray[indexPath.section].identities[indexPath.row]
-        print(destinationName)
+//        print(destinationName)
         let destinationVC: AnyObject = storyboard?.instantiateViewControllerWithIdentifier(destinationName) as! UIViewController
         self.navigationController?.pushViewController(destinationVC as! UIViewController, animated: true)
 
     }
 
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    
-    }
-    */
-    
-    
     
 }
