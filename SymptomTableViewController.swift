@@ -12,27 +12,17 @@ class SymptomTableViewController: UITableViewController {
     
     // Properties
     
-    struct Hospital {
+    struct Department {
         var departmentName: String!
-        var symptomata: [String: String]!
+        var symptomata: [String]!
+        var identities: [String]!
     }
     
-    var hospitalArray = [Hospital]()
-    var symptoms = [String]()
-    var identities = [String]()
+    var departmentArray = [Department]()
+    
     
     func populateArrays() {
-        hospitalArray = [Hospital(departmentName: "Cardiology", symptomata: ["Bradycardia": "brady", "Narrow Complex Tachycardia" : "nct", "Wide Complex Tachycardia" : "wct"]), Hospital(departmentName: "Endocrinology", symptomata: ["Hypoglycemia" : "hypogly", "Hyperglycemia" : "hypergly", "Hypocalcemia" : "hypocal", "Hypercalcemia" : "hypercal"])]
-        
-        
-      //  for index in 0..<hospitalArray.count  {
-            for item in hospitalArray {
-                for (key, value) in item.symptomata {
-                    symptoms[key.hashValue] = key
-                    identities[value.hashValue] = value
-                }
-            }
-        //}
+        departmentArray = [Department(departmentName: "Cardiology", symptomata: ["Bradycardia", "Narrow Complex Tachycardia", "Wide Complex Tachycardia"], identities: ["brady", "nct", "wct"]), Department(departmentName: "Endocrinology", symptomata: ["Hypoglycemia", "Hyperglycemia", "Hypocalcemia", "Hypercalcemia"], identities: ["hypogly", "hypergly", "hypocal", "hypercal"])]
     }
     
     override func viewDidLoad() {
@@ -48,45 +38,46 @@ class SymptomTableViewController: UITableViewController {
     
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return hospitalArray.count
+        return departmentArray.count
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return hospitalArray[section].symptomata.count
+        return departmentArray[section].symptomata.count
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return hospitalArray[section].departmentName
+        return departmentArray[section].departmentName
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SymptomCell", forIndexPath: indexPath) as! UITableViewCell
-        cell.textLabel?.text = symptoms[indexPath.row]
+        
+        cell.textLabel?.text = departmentArray[indexPath.section].symptomata[indexPath.row]
+        
         return cell
     }
     
     
-    
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-    
-            let destinationName = identities[indexPath.row]
-        print(destinationName)
-            let destinationVC: AnyObject = storyboard?.instantiateViewControllerWithIdentifier(destinationName) as! UIViewController
-            self.navigationController?.pushViewController(destinationVC as! UIViewController, animated: true)
+        let selectedCell = tableView.dequeueReusableCellWithIdentifier("SymptomCell", forIndexPath: indexPath) as! UITableViewCell
         
-    
+        let destinationName = departmentArray[indexPath.section].identities[indexPath.row]
+        print(destinationName)
+        let destinationVC: AnyObject = storyboard?.instantiateViewControllerWithIdentifier(destinationName) as! UIViewController
+        self.navigationController?.pushViewController(destinationVC as! UIViewController, animated: true)
+        
         
     }
     
-    /*
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+    
     }
-    */
+    
     
     
 }
