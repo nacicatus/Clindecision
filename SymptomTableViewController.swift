@@ -14,16 +14,30 @@ class SymptomTableViewController: UITableViewController {
     
     struct Hospital {
         var departmentName: String!
-        var symptoms: [String]!
+        var symptomata: [String: String]!
     }
     
     var hospitalArray = [Hospital]()
+    var symptoms = [String]()
+    var identities = [String]()
     
+    func populateArrays() {
+        hospitalArray = [Hospital(departmentName: "Cardiology", symptomata: ["Bradycardia": "brady", "Narrow Complex Tachycardia" : "nct", "Wide Complex Tachycardia" : "wct"]), Hospital(departmentName: "Endocrinology", symptomata: ["Hypoglycemia" : "hypogly", "Hyperglycemia" : "hypergly", "Hypocalcemia" : "hypocal", "Hypercalcemia" : "hypercal"])]
+        
+        
+      //  for index in 0..<hospitalArray.count  {
+            for item in hospitalArray {
+                for (key, value) in item.symptomata {
+                    symptoms[key.hashValue] = key
+                    identities[value.hashValue] = value
+                }
+            }
+        //}
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        hospitalArray = [Hospital(departmentName: "Cardiology", symptoms: ["Bradycardia", "Narrow Complex Tachycardia", "Wide Complex Tachycardia"]), Hospital(departmentName: "Endocrinology", symptoms: ["Hypoglycemia", "Hyperglycemia", "Hypocalcemia", "Hypercalcemia"])]
+        populateArrays()
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,7 +52,7 @@ class SymptomTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return hospitalArray[section].symptoms.count
+        return hospitalArray[section].symptomata.count
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -48,13 +62,20 @@ class SymptomTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SymptomCell", forIndexPath: indexPath) as! UITableViewCell
-        cell.textLabel?.text = hospitalArray[indexPath.section].symptoms[indexPath.row]
+        cell.textLabel?.text = symptoms[indexPath.row]
         return cell
     }
     
     
     
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    
+            let destinationName = identities[indexPath.row]
+        print(destinationName)
+            let destinationVC: AnyObject = storyboard?.instantiateViewControllerWithIdentifier(destinationName) as! UIViewController
+            self.navigationController?.pushViewController(destinationVC as! UIViewController, animated: true)
+        
+    
         
     }
     
@@ -63,9 +84,9 @@ class SymptomTableViewController: UITableViewController {
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+        
     }
     */
+    
     
 }
