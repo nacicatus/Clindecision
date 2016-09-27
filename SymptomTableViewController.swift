@@ -58,25 +58,24 @@ class SymptomTableViewController: UITableViewController {
         return cell
     }
     
-    
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedCell = tableView.dequeueReusableCellWithIdentifier("SymptomCell", forIndexPath: indexPath) as! UITableViewCell
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let destinationName = departmentArray[indexPath.section].identities[indexPath.row]
         print(destinationName)
         let destinationVC: AnyObject = storyboard?.instantiateViewControllerWithIdentifier(destinationName) as! UIViewController
         self.navigationController?.pushViewController(destinationVC as! UIViewController, animated: true)
-        
-        
+
     }
+
     
-    
+    /*
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
     }
+    */
     
     
     
