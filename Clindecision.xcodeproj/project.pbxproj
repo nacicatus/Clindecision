@@ -8,27 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F82BE4DC1BD939F500A81989 /* PreventiveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82BE4DB1BD939F500A81989 /* PreventiveDetailViewController.swift */; };
-		F8326C0D1BD17644000A82D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8326C0C1BD17644000A82D0 /* AppDelegate.swift */; };
 		F8326C121BD17644000A82D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8326C101BD17644000A82D0 /* Main.storyboard */; };
 		F8326C141BD17644000A82D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8326C131BD17644000A82D0 /* Images.xcassets */; };
 		F8326C171BD17644000A82D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8326C151BD17644000A82D0 /* LaunchScreen.xib */; };
 		F8326C231BD17644000A82D0 /* ClindecisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8326C221BD17644000A82D0 /* ClindecisionTests.swift */; };
-		F8406B511BD80A2F0062B494 /* GeneralMedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B501BD80A2F0062B494 /* GeneralMedicineTableViewController.swift */; };
-		F8406B531BD80FA60062B494 /* CardiologyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B521BD80FA60062B494 /* CardiologyTableViewController.swift */; };
-		F8406B551BD812770062B494 /* DermatologyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B541BD812770062B494 /* DermatologyTableViewController.swift */; };
-		F8406B571BD8142F0062B494 /* EndocrinologyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B561BD8142F0062B494 /* EndocrinologyTableViewController.swift */; };
-		F8406B591BD815EA0062B494 /* GastroenterologyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B581BD815EA0062B494 /* GastroenterologyTableViewController.swift */; };
-		F8406B5B1BD8175F0062B494 /* HematoncoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B5A1BD8175F0062B494 /* HematoncoTableViewController.swift */; };
-		F8406B5D1BD81A440062B494 /* InfectiousTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B5C1BD81A440062B494 /* InfectiousTableViewController.swift */; };
-		F8406B5F1BD81C410062B494 /* NephroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B5E1BD81C410062B494 /* NephroTableViewController.swift */; };
-		F8406B621BD81D850062B494 /* NeuroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B611BD81D850062B494 /* NeuroTableViewController.swift */; };
-		F8406B641BD820BF0062B494 /* PulmonologyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B631BD820BF0062B494 /* PulmonologyTableViewController.swift */; };
-		F8406B661BD821B40062B494 /* RheumatologyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B651BD821B40062B494 /* RheumatologyTableViewController.swift */; };
-		F8406B681BD822DC0062B494 /* WomensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B671BD822DC0062B494 /* WomensTableViewController.swift */; };
-		F8406B6A1BD823F40062B494 /* UrologyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B691BD823F40062B494 /* UrologyTableViewController.swift */; };
-		F8406B6C1BD824BE0062B494 /* EmergencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B6B1BD824BE0062B494 /* EmergencyTableViewController.swift */; };
-		F8406B6E1BD825440062B494 /* BehavioralTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B6D1BD825440062B494 /* BehavioralTableViewController.swift */; };
-		F8406B701BD825E10062B494 /* PharmacologyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8406B6F1BD825E10062B494 /* PharmacologyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,29 +28,12 @@
 		F82BE4DB1BD939F500A81989 /* PreventiveDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreventiveDetailViewController.swift; sourceTree = "<group>"; };
 		F8326C071BD17644000A82D0 /* Clindecision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clindecision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8326C0B1BD17644000A82D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8326C0C1BD17644000A82D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8326C111BD17644000A82D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8326C131BD17644000A82D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8326C161BD17644000A82D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F8326C1C1BD17644000A82D0 /* ClindecisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClindecisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8326C211BD17644000A82D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8326C221BD17644000A82D0 /* ClindecisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClindecisionTests.swift; sourceTree = "<group>"; };
-		F8406B501BD80A2F0062B494 /* GeneralMedicineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralMedicineTableViewController.swift; path = ../GeneralMedicineTableViewController.swift; sourceTree = "<group>"; };
-		F8406B521BD80FA60062B494 /* CardiologyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardiologyTableViewController.swift; sourceTree = "<group>"; };
-		F8406B541BD812770062B494 /* DermatologyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DermatologyTableViewController.swift; sourceTree = "<group>"; };
-		F8406B561BD8142F0062B494 /* EndocrinologyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndocrinologyTableViewController.swift; sourceTree = "<group>"; };
-		F8406B581BD815EA0062B494 /* GastroenterologyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GastroenterologyTableViewController.swift; sourceTree = "<group>"; };
-		F8406B5A1BD8175F0062B494 /* HematoncoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HematoncoTableViewController.swift; sourceTree = "<group>"; };
-		F8406B5C1BD81A440062B494 /* InfectiousTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfectiousTableViewController.swift; sourceTree = "<group>"; };
-		F8406B5E1BD81C410062B494 /* NephroTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NephroTableViewController.swift; sourceTree = "<group>"; };
-		F8406B611BD81D850062B494 /* NeuroTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuroTableViewController.swift; sourceTree = "<group>"; };
-		F8406B631BD820BF0062B494 /* PulmonologyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonologyTableViewController.swift; sourceTree = "<group>"; };
-		F8406B651BD821B40062B494 /* RheumatologyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RheumatologyTableViewController.swift; sourceTree = "<group>"; };
-		F8406B671BD822DC0062B494 /* WomensTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WomensTableViewController.swift; sourceTree = "<group>"; };
-		F8406B691BD823F40062B494 /* UrologyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrologyTableViewController.swift; sourceTree = "<group>"; };
-		F8406B6B1BD824BE0062B494 /* EmergencyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyTableViewController.swift; sourceTree = "<group>"; };
-		F8406B6D1BD825440062B494 /* BehavioralTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehavioralTableViewController.swift; sourceTree = "<group>"; };
-		F8406B6F1BD825E10062B494 /* PharmacologyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmacologyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				F8326C101BD17644000A82D0 /* Main.storyboard */,
-				F8406B601BD81D540062B494 /* Detail Table View Controllers */,
-				F8326C131BD17644000A82D0 /* Images.xcassets */,
-				F8326C151BD17644000A82D0 /* LaunchScreen.xib */,
 				F8326C0A1BD17644000A82D0 /* Supporting Files */,
 			);
 			path = Clindecision;
@@ -121,6 +84,8 @@
 		F8326C0A1BD17644000A82D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F8326C131BD17644000A82D0 /* Images.xcassets */,
+				F8326C151BD17644000A82D0 /* LaunchScreen.xib */,
 				F82BE4DB1BD939F500A81989 /* PreventiveDetailViewController.swift */,
 				F8326C0B1BD17644000A82D0 /* Info.plist */,
 			);
@@ -142,30 +107,6 @@
 				F8326C211BD17644000A82D0 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F8406B601BD81D540062B494 /* Detail Table View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F8326C0C1BD17644000A82D0 /* AppDelegate.swift */,
-				F8406B501BD80A2F0062B494 /* GeneralMedicineTableViewController.swift */,
-				F8406B5A1BD8175F0062B494 /* HematoncoTableViewController.swift */,
-				F8406B5C1BD81A440062B494 /* InfectiousTableViewController.swift */,
-				F8406B5E1BD81C410062B494 /* NephroTableViewController.swift */,
-				F8406B541BD812770062B494 /* DermatologyTableViewController.swift */,
-				F8406B561BD8142F0062B494 /* EndocrinologyTableViewController.swift */,
-				F8406B521BD80FA60062B494 /* CardiologyTableViewController.swift */,
-				F8406B581BD815EA0062B494 /* GastroenterologyTableViewController.swift */,
-				F8406B611BD81D850062B494 /* NeuroTableViewController.swift */,
-				F8406B631BD820BF0062B494 /* PulmonologyTableViewController.swift */,
-				F8406B651BD821B40062B494 /* RheumatologyTableViewController.swift */,
-				F8406B671BD822DC0062B494 /* WomensTableViewController.swift */,
-				F8406B691BD823F40062B494 /* UrologyTableViewController.swift */,
-				F8406B6B1BD824BE0062B494 /* EmergencyTableViewController.swift */,
-				F8406B6D1BD825440062B494 /* BehavioralTableViewController.swift */,
-				F8406B6F1BD825E10062B494 /* PharmacologyTableViewController.swift */,
-			);
-			name = "Detail Table View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,24 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8406B6A1BD823F40062B494 /* UrologyTableViewController.swift in Sources */,
-				F8406B5B1BD8175F0062B494 /* HematoncoTableViewController.swift in Sources */,
-				F8406B6E1BD825440062B494 /* BehavioralTableViewController.swift in Sources */,
-				F8406B621BD81D850062B494 /* NeuroTableViewController.swift in Sources */,
-				F8406B571BD8142F0062B494 /* EndocrinologyTableViewController.swift in Sources */,
-				F8406B6C1BD824BE0062B494 /* EmergencyTableViewController.swift in Sources */,
-				F8406B661BD821B40062B494 /* RheumatologyTableViewController.swift in Sources */,
 				F82BE4DC1BD939F500A81989 /* PreventiveDetailViewController.swift in Sources */,
-				F8406B511BD80A2F0062B494 /* GeneralMedicineTableViewController.swift in Sources */,
-				F8406B551BD812770062B494 /* DermatologyTableViewController.swift in Sources */,
-				F8406B5F1BD81C410062B494 /* NephroTableViewController.swift in Sources */,
-				F8406B641BD820BF0062B494 /* PulmonologyTableViewController.swift in Sources */,
-				F8406B591BD815EA0062B494 /* GastroenterologyTableViewController.swift in Sources */,
-				F8406B681BD822DC0062B494 /* WomensTableViewController.swift in Sources */,
-				F8326C0D1BD17644000A82D0 /* AppDelegate.swift in Sources */,
-				F8406B701BD825E10062B494 /* PharmacologyTableViewController.swift in Sources */,
-				F8406B5D1BD81A440062B494 /* InfectiousTableViewController.swift in Sources */,
-				F8406B531BD80FA60062B494 /* CardiologyTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
