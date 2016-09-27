@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Symptom Table View Controller-->
+        <!--Symptomata-->
         <scene sceneID="HYh-2S-3t6">
             <objects>
                 <tableViewController id="oS7-cC-iCS" customClass="SymptomTableViewController" customModule="Clindecision" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                             <outlet property="delegate" destination="oS7-cC-iCS" id="p84-ho-lQU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="75T-jn-D8a"/>
+                    <navigationItem key="navigationItem" title="Symptomata" id="75T-jn-D8a"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ML1-2q-n4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,14 +53,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hypogly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hr-bd-jAW">
-                                <rect key="frame" x="16" y="28" width="61" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hypoglycemia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hr-bd-jAW">
+                                <rect key="frame" x="16" y="28" width="110" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2hr-bd-jAW" firstAttribute="leading" secondItem="WCT-rR-fZc" secondAttribute="leadingMargin" id="2hL-2O-buU"/>
+                            <constraint firstItem="2hr-bd-jAW" firstAttribute="top" secondItem="Yl2-IL-jTG" secondAttribute="bottom" constant="8" id="eIl-JD-QwU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZ2-dv-clE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -79,14 +83,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hypergly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL2-CE-jbr">
-                                <rect key="frame" x="16" y="28" width="65" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyperglycemia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL2-CE-jbr">
+                                <rect key="frame" x="16" y="28" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xL2-CE-jbr" firstAttribute="top" secondItem="v32-o1-5NE" secondAttribute="bottom" constant="8" id="W1X-bb-XMO"/>
+                            <constraint firstItem="xL2-CE-jbr" firstAttribute="leading" secondItem="rPh-Lt-Y0w" secondAttribute="leadingMargin" id="mgC-Sc-STS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YV8-Np-5rd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -105,14 +113,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hypocal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTT-7B-mhL">
-                                <rect key="frame" x="16" y="28" width="61" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hypocalcemia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTT-7B-mhL">
+                                <rect key="frame" x="16" y="28" width="110" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DTT-7B-mhL" firstAttribute="leading" secondItem="Vof-20-hIB" secondAttribute="leadingMargin" id="iXO-IM-G2Q"/>
+                            <constraint firstItem="DTT-7B-mhL" firstAttribute="top" secondItem="1eF-Qd-V3a" secondAttribute="bottom" constant="8" id="w7D-LB-1w5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K4o-Fe-gLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -131,14 +143,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hypercal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-BJ-RnI">
-                                <rect key="frame" x="16" y="28" width="66" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hypercalcemia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-BJ-RnI">
+                                <rect key="frame" x="16" y="28" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T5d-BJ-RnI" firstAttribute="leading" secondItem="23Q-Cf-TpO" secondAttribute="leadingMargin" id="06Z-1M-nsa"/>
+                            <constraint firstItem="T5d-BJ-RnI" firstAttribute="top" secondItem="zNe-2l-1ri" secondAttribute="bottom" constant="8" id="0ir-nO-Pm5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YqV-qY-iXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -158,7 +174,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bradycardia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHO-DS-GWE">
-                                <rect key="frame" x="254" y="290" width="93" height="21"/>
+                                <rect key="frame" x="16" y="28" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -166,8 +182,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="GHO-DS-GWE" secondAttribute="centerX" id="QSI-9x-zdd"/>
-                            <constraint firstAttribute="centerY" secondItem="GHO-DS-GWE" secondAttribute="centerY" id="hOU-Ux-U8O"/>
+                            <constraint firstItem="GHO-DS-GWE" firstAttribute="top" secondItem="Dav-xb-xQA" secondAttribute="bottom" constant="8" id="mLp-n6-8f3"/>
+                            <constraint firstItem="GHO-DS-GWE" firstAttribute="leading" secondItem="Y19-tK-mQZ" secondAttribute="leadingMargin" id="zFG-bo-f5A"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -217,14 +233,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wct" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTA-eF-O93">
-                                <rect key="frame" x="16" y="28" width="28" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wide Complex Tachycardia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTA-eF-O93">
+                                <rect key="frame" x="16" y="28" width="209" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lTA-eF-O93" firstAttribute="leading" secondItem="PtV-Gd-L8a" secondAttribute="leadingMargin" id="LoL-hi-ZNo"/>
+                            <constraint firstItem="lTA-eF-O93" firstAttribute="top" secondItem="GRH-BI-rBk" secondAttribute="bottom" constant="8" id="zTg-YZ-SDS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1A9-sW-4q6" userLabel="First Responder" sceneMemberID="firstResponder"/>
